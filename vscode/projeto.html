@@ -1,0 +1,1106 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Sims 4 Mod APK Download</title>
+  <style>
+    :root {
+      --bg: #f3f4f7;
+      --card: #ffffff;
+      --text: #1f2328;
+      --muted: #667085;
+      --line: #e6e8ec;
+      --primary: #1677ff;
+      --green: #16a34a;
+      --red: #e53935;
+      --orange: #ff9800;
+      --purple: #7e57c2;
+      --pink: #ec407a;
+      --shadow: 0 10px 30px rgba(0,0,0,0.10);
+      --radius: 14px;
+    }
+
+    * {
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      background:
+        radial-gradient(circle at top left, #ffffff 0, #f3f4f7 45%, #e9edf3 100%);
+      color: var(--text);
+      overflow-x: hidden;
+    }
+
+    a {
+      color: inherit;
+    }
+
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 90;
+      background: rgba(255,255,255,0.92);
+      backdrop-filter: blur(8px);
+      border-bottom: 1px solid var(--line);
+      box-shadow: 0 2px 12px rgba(0,0,0,0.04);
+    }
+
+    .topbar {
+      max-width: 1400px;
+      margin: 0 auto;
+      padding: 14px 18px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      min-width: 0;
+    }
+
+    .logo {
+      width: 42px;
+      height: 42px;
+      border-radius: 10px;
+      background: linear-gradient(135deg, #00c853, #00b0ff);
+      box-shadow: inset 0 0 0 2px rgba(255,255,255,0.65);
+      flex-shrink: 0;
+    }
+
+    .brand h1 {
+      margin: 0;
+      font-size: 22px;
+      color: #1877f2;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .nav-fake {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+
+    .nav-fake a {
+      text-decoration: none;
+      font-size: 13px;
+      color: #475467;
+      background: #f8fafc;
+      border: 1px solid var(--line);
+      padding: 8px 12px;
+      border-radius: 999px;
+    }
+
+    .page {
+      width: min(96%, 1440px);
+      margin: 18px auto 40px;
+      display: grid;
+      grid-template-columns: 220px minmax(0, 1fr) 220px;
+      gap: 18px;
+      align-items: start;
+    }
+
+    .sidebar {
+      position: sticky;
+      top: 82px;
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+    }
+
+    .sponsored-card,
+    .mini-ad,
+    .banner,
+    .card,
+    .download-panel,
+    .info-card,
+    .comments-box {
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+    }
+
+    .mini-ad {
+      overflow: hidden;
+    }
+
+    .mini-ad .label,
+    .sponsored-card .label {
+      padding: 8px 12px;
+      font-size: 11px;
+      font-weight: bold;
+      color: #98a2b3;
+      border-bottom: 1px solid var(--line);
+      letter-spacing: 0.08em;
+    }
+
+    .mini-ad a,
+    .sponsored-card a {
+      display: block;
+      text-decoration: none;
+    }
+
+    .mini-ad .thumb,
+    .sponsored-card .thumb {
+      height: 120px;
+      background: linear-gradient(135deg, #dfe7f3, #f8fbff);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #7b8794;
+      font-weight: bold;
+      text-align: center;
+      padding: 14px;
+    }
+
+    .mini-ad .copy,
+    .sponsored-card .copy {
+      padding: 12px;
+    }
+
+    .mini-ad .copy h4,
+    .sponsored-card .copy h4 {
+      margin: 0 0 6px;
+      font-size: 14px;
+      color: #111827;
+    }
+
+    .mini-ad .copy p,
+    .sponsored-card .copy p {
+      margin: 0;
+      font-size: 12px;
+      color: #667085;
+      line-height: 1.45;
+    }
+
+    main {
+      min-width: 0;
+    }
+
+    .hero {
+      padding: 0;
+      overflow: hidden;
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 20px;
+      box-shadow: var(--shadow);
+    }
+
+    .hero-top {
+      padding: 24px 24px 10px;
+      display: flex;
+      gap: 18px;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    .app-cover {
+      width: 110px;
+      height: 110px;
+      border-radius: 22px;
+      background: linear-gradient(135deg, #4caf50, #00bcd4);
+      box-shadow: inset 0 0 0 3px rgba(255,255,255,0.55);
+      flex-shrink: 0;
+    }
+
+    .hero-text {
+      flex: 1;
+      min-width: 260px;
+    }
+
+    .hero-text h2 {
+      margin: 0 0 8px;
+      font-size: 34px;
+      line-height: 1.1;
+      color: #1d2939;
+    }
+
+    .hero-text p {
+      margin: 0 0 14px;
+      color: #667085;
+      font-size: 15px;
+      line-height: 1.6;
+    }
+
+    .badge-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+
+    .badge {
+      font-size: 12px;
+      padding: 8px 10px;
+      border-radius: 999px;
+      background: #f5f7fa;
+      color: #344054;
+      border: 1px solid #e6e8ec;
+    }
+
+    .hero-strip {
+      margin-top: 10px;
+      border-top: 1px solid var(--line);
+      padding: 14px 24px;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 10px;
+      background: linear-gradient(180deg, #fcfdff, #f7f9fc);
+    }
+
+    .hero-stat {
+      background: #fff;
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      padding: 12px;
+      text-align: center;
+    }
+
+    .hero-stat strong {
+      display: block;
+      font-size: 18px;
+      margin-bottom: 4px;
+    }
+
+    .hero-stat span {
+      font-size: 12px;
+      color: #667085;
+    }
+
+    .banner {
+      margin-top: 18px;
+      overflow: hidden;
+    }
+
+    .banner a {
+      display: block;
+      text-decoration: none;
+    }
+
+    .banner .big {
+      min-height: 220px;
+      background:
+        linear-gradient(135deg, rgba(22,119,255,0.12), rgba(126,87,194,0.18)),
+        linear-gradient(45deg, #ffffff, #eef3fb);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 24px;
+      color: #445469;
+      font-size: 22px;
+      font-weight: bold;
+    }
+
+    .notice {
+      margin-top: 18px;
+      padding: 14px 16px;
+      border-radius: 12px;
+      background: #fff8db;
+      border: 1px solid #f4dc7d;
+      color: #7a5d00;
+      font-size: 14px;
+      line-height: 1.5;
+    }
+
+    .download-grid {
+      margin-top: 18px;
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 12px;
+    }
+
+    .download-grid a {
+      text-decoration: none;
+    }
+
+    .cta {
+      display: block;
+      padding: 18px 14px;
+      border-radius: 14px;
+      color: #fff;
+      font-weight: bold;
+      text-align: center;
+      box-shadow: 0 8px 18px rgba(0,0,0,0.15);
+      transition: transform 0.18s ease, filter 0.18s ease;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .cta::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(120deg, transparent 0%, rgba(255,255,255,0.18) 45%, transparent 70%);
+      transform: translateX(-120%);
+      transition: transform 0.6s ease;
+    }
+
+    .cta:hover {
+      transform: translateY(-2px);
+      filter: brightness(1.04);
+    }
+
+    .cta:hover::after {
+      transform: translateX(120%);
+    }
+
+    .green { background: linear-gradient(135deg, #18b45b, #119e4f); }
+    .blue { background: linear-gradient(135deg, #2590ff, #1565d8); }
+    .orange { background: linear-gradient(135deg, #ffae2b, #f57c00); }
+    .red { background: linear-gradient(135deg, #ef5350, #d32f2f); }
+    .purple { background: linear-gradient(135deg, #8e5cff, #6f42c1); }
+    .pink { background: linear-gradient(135deg, #ff5b99, #db2777); }
+
+    .mid-grid {
+      margin-top: 18px;
+      display: grid;
+      grid-template-columns: 1.3fr 0.7fr;
+      gap: 18px;
+    }
+
+    .card {
+      padding: 18px;
+    }
+
+    .card h3 {
+      margin: 0 0 10px;
+      font-size: 24px;
+      color: #1d2939;
+    }
+
+    .card p {
+      margin: 0;
+      color: #667085;
+      line-height: 1.65;
+      font-size: 15px;
+    }
+
+    .info-card {
+      padding: 16px;
+      margin-top: 14px;
+      background: linear-gradient(180deg, #fff, #fafbfd);
+    }
+
+    .info-list {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px;
+      margin: 0;
+    }
+
+    .info-item {
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      padding: 12px;
+      background: #fff;
+    }
+
+    .info-item strong {
+      display: block;
+      margin-bottom: 4px;
+      font-size: 13px;
+      color: #344054;
+    }
+
+    .info-item span {
+      color: #111827;
+      font-size: 14px;
+    }
+
+    .download-panel {
+      padding: 18px;
+      position: sticky;
+      top: 82px;
+    }
+
+    .download-panel h3 {
+      margin: 0 0 10px;
+      font-size: 22px;
+    }
+
+    .download-panel p {
+      margin: 0 0 14px;
+      font-size: 14px;
+      color: #667085;
+      line-height: 1.55;
+    }
+
+    .countdown-box {
+      border: 1px solid var(--line);
+      background: #f8fafc;
+      border-radius: 14px;
+      padding: 14px;
+    }
+
+    .progress-head {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10px;
+      margin-bottom: 10px;
+      font-size: 13px;
+      color: #475467;
+    }
+
+    .progress-wrap {
+      width: 100%;
+      height: 14px;
+      border-radius: 999px;
+      background: #e9eef5;
+      overflow: hidden;
+      border: 1px solid #dde3ec;
+    }
+
+    .progress-bar {
+      width: 0%;
+      height: 100%;
+      border-radius: inherit;
+      background: linear-gradient(90deg, #25c05a, #17a34a, #0ea5e9);
+      transition: width 1s linear;
+    }
+
+    .count-number {
+      margin-top: 10px;
+      font-size: 13px;
+      color: #667085;
+    }
+
+    .real-download {
+      margin-top: 16px;
+      display: none;
+      animation: popIn 0.45s ease;
+    }
+
+    .real-download a {
+      display: block;
+      text-decoration: none;
+      text-align: center;
+      background: linear-gradient(135deg, #1ebc61, #119e4f);
+      color: #fff;
+      font-size: 20px;
+      font-weight: bold;
+      padding: 18px 16px;
+      border-radius: 16px;
+      box-shadow: 0 10px 20px rgba(17,158,79,0.26);
+    }
+
+    .helper-links {
+      margin-top: 12px;
+      display: grid;
+      gap: 8px;
+    }
+
+    .helper-links a {
+      text-decoration: none;
+      font-size: 13px;
+      color: #1565d8;
+      padding: 10px 12px;
+      border: 1px solid var(--line);
+      border-radius: 10px;
+      background: #fff;
+    }
+
+    .comments-box {
+      margin-top: 18px;
+      padding: 18px;
+    }
+
+    .comments-box h3 {
+      margin: 0 0 14px;
+      font-size: 22px;
+    }
+
+    .comment {
+      display: flex;
+      gap: 12px;
+      padding: 12px 0;
+      border-top: 1px solid #edf0f3;
+    }
+
+    .comment:first-of-type {
+      border-top: none;
+      padding-top: 0;
+    }
+
+    .avatar {
+      width: 42px;
+      height: 42px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, #d8dee9, #f4f7fb);
+      flex-shrink: 0;
+    }
+
+    .comment b {
+      display: inline-block;
+      margin-bottom: 4px;
+    }
+
+    .comment p {
+      margin: 0;
+      color: #667085;
+      font-size: 14px;
+      line-height: 1.55;
+    }
+
+    .floating-popups {
+      pointer-events: none;
+    }
+
+    .popup {
+      position: fixed;
+      width: 280px;
+      background: #fff;
+      border: 1px solid #dfe3ea;
+      border-radius: 16px;
+      box-shadow: 0 18px 45px rgba(0,0,0,0.18);
+      z-index: 120;
+      overflow: hidden;
+      animation: floatIn 0.45s ease;
+      pointer-events: auto;
+    }
+
+    .popup-top {
+      padding: 10px 14px;
+      font-size: 12px;
+      font-weight: bold;
+      color: #fff;
+    }
+
+    .popup-danger .popup-top { background: linear-gradient(135deg, #ef5350, #c62828); }
+    .popup-info .popup-top { background: linear-gradient(135deg, #42a5f5, #1565d8); }
+    .popup-offer .popup-top { background: linear-gradient(135deg, #ab47bc, #7b1fa2); }
+
+    .popup-body {
+      padding: 14px;
+    }
+
+    .popup-body h4 {
+      margin: 0 0 8px;
+      font-size: 16px;
+      color: #111827;
+    }
+
+    .popup-body p {
+      margin: 0 0 12px;
+      color: #667085;
+      font-size: 14px;
+      line-height: 1.5;
+    }
+
+    .popup-actions {
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+    }
+
+    .popup-actions a,
+    .popup-actions button {
+      border: none;
+      text-decoration: none;
+      cursor: pointer;
+      border-radius: 10px;
+      padding: 10px 12px;
+      font-weight: bold;
+      font-size: 13px;
+    }
+
+    .popup-actions a {
+      background: #1677ff;
+      color: #fff;
+    }
+
+    .popup-actions button {
+      background: #f4f6f8;
+      color: #344054;
+    }
+
+    .popup1 { top: 96px; left: 18px; }
+    .popup2 { top: 160px; right: 18px; }
+    .popup3 { bottom: 20px; left: 30px; }
+
+    .toast-area {
+      position: fixed;
+      right: 18px;
+      bottom: 18px;
+      z-index: 130;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .toast {
+      min-width: 260px;
+      max-width: 320px;
+      background: rgba(22, 26, 32, 0.94);
+      color: #fff;
+      padding: 14px 16px;
+      border-radius: 14px;
+      box-shadow: 0 16px 35px rgba(0,0,0,0.22);
+      animation: slideUp 0.35s ease;
+      font-size: 14px;
+      line-height: 1.45;
+    }
+
+    .toast strong {
+      display: block;
+      margin-bottom: 4px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px 18px 60px;
+      color: #98a2b3;
+      font-size: 13px;
+    }
+
+    @keyframes floatIn {
+      from {
+        opacity: 0;
+        transform: translateY(18px) scale(0.96);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+      }
+    }
+
+    @keyframes slideUp {
+      from {
+        opacity: 0;
+        transform: translateY(16px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes popIn {
+      from {
+        opacity: 0;
+        transform: scale(0.96);
+      }
+      to {
+        opacity: 1;
+        transform: scale(1);
+      }
+    }
+
+    @media (max-width: 1180px) {
+      .page {
+        grid-template-columns: 1fr;
+      }
+
+      .sidebar,
+      .download-panel {
+        position: static;
+      }
+
+      .mid-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .hero-strip {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 700px) {
+      .topbar {
+        flex-direction: column;
+        align-items: stretch;
+      }
+
+      .hero-top {
+        padding: 18px;
+      }
+
+      .hero-text h2 {
+        font-size: 28px;
+      }
+
+      .download-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .info-list {
+        grid-template-columns: 1fr;
+      }
+
+      .popup {
+        width: min(90vw, 280px);
+      }
+
+      .popup1 { left: 10px; top: 90px; }
+      .popup2 { right: 10px; top: 210px; }
+      .popup3 { left: 10px; bottom: 14px; }
+    }
+
+    @media (max-width: 520px) {
+      .download-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .hero-strip {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="topbar">
+      <div class="brand">
+        <div class="logo"><img src="imgs/thesims.png" alt="" width="40px"></div>
+        <h1>The Sims 4 Download Free APK</h1>
+      </div>
+
+      <nav class="nav-fake">
+        <a href="#">Home</a>
+        <a href="#">Apps</a>
+        <a href="#">Games</a>
+        <a href="#">Trending</a>
+        <a href="#">Updated APKs</a>
+      </nav>
+    </div>
+  </header>
+
+  <div class="floating-popups">
+    <div class="popup popup1 popup-danger" id="popup1">
+      <div class="popup-top">ALERTA DO SISTEMA</div>
+      <div class="popup-body">
+        <h4>Seu dispositivo precisa de atenção</h4>
+        <p>Se fudeu</p>
+        <div class="popup-actions">
+          <a href="https://www.bet365.bet.br/hub/pt-br/sports-betting-br?utm_source=google&utm_medium=cpc&utm_content=br_non_brand&affiliate=365_03585089&gad_source=1&gad_campaignid=22048942074&gclid=Cj0KCQjwr4jSBhCSARIsAOX1E-KkSNv8AnBUmTxkOZ3E7wa8FiWac8u94emyE54ZamK_nOnLpRTT924aAkSsEALw_wcB">Abrir</a>
+          <button onclick="closePopup('popup1')">Fechar</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="popup popup2 popup-info" id="popup2">
+      <div class="popup-top">DOWNLOAD CENTER</div>
+      <div class="popup-body">
+        <h4>Preparando arquivos</h4>
+        <p>Seu conteúdo será liberado após a contagem de preparação.</p>
+        <div class="popup-actions">
+          <a href="https://www.microsoft.com/pt-br">Continuar</a>
+          <button onclick="closePopup('popup2')">Agora não</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="popup popup3 popup-offer" id="popup3">
+      <div class="popup-top">OFERTA PATROCINADA</div>
+      <div class="popup-body">
+        <h4>Conteúdo recomendado</h4>
+        <p>Bloco visual para anúncio fudido</p>
+        <div class="popup-actions">
+          <a href="https://www.microsoft.com/pt-br">Ver oferta</a>
+          <button onclick="closePopup('popup3')">Ignorar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="page">
+    <aside class="sidebar">
+      <div class="mini-ad">
+        <div class="label">ADVERTISEMENT</div>
+        <a href="https://www.bet365.bet.br/hub/pt-br/sports-betting-br?utm_source=google&utm_medium=cpc&utm_content=br_non_brand&affiliate=365_03585089&gad_source=1&gad_campaignid=22048942074&gclid=Cj0KCQjwr4jSBhCSARIsAOX1E-KkSNv8AnBUmTxkOZ3E7wa8FiWac8u94emyE54ZamK_nOnLpRTT924aAkSsEALw_wcB">
+          <div class="thumb"><img src="imgs/anúncio1.jpg" alt="." width="200px"></div>
+          <div class="copy">
+            <h4>Ferramenta popular para celular</h4>
+            <p>Esse aparelho fudido aqui é bom em!!</p>
+          </div>
+        </a>
+      </div>
+
+      <div class="mini-ad">
+        <div class="label">SPONSORED</div>
+        <a href="https://www.xbox.com/pt-br/games/store/xbox-game-pass-ultimate/cfq7ttc0khs0?icid=mscom_marcom_H1a_GamePass">
+          <div class="thumb"><img src="imgs/anúncio3.gif" alt="" width="200px"></div>
+          <div class="copy">
+            <h4>Jogo recomendado da semana</h4>
+            <p>the sims 4 é doidmais zé</p>
+          </div>
+        </a>
+      </div>
+
+      <div class="mini-ad">
+        <div class="label">TOP OFFER</div>
+        <a href="https://www.mcdonalds.com.br/cardapio/sanduiches-de-carne-bovina">
+          <div class="thumb"><img src="imgs/anúncio3.gif" alt=""></div>
+          <div class="copy">
+            <h4>Aplicativo em destaque</h4>
+            <p>Ideal para preencher a lateral e quebrar a simetria do layout.</p>
+          </div>
+        </a>
+      </div>
+    </aside>
+
+    <main>
+      <section class="hero">
+        <div class="hero-top">
+          <div class="app-cover"><img src="imgs/thesims.png" alt="" width="110px"></div>
+
+          <div class="hero-text">
+            <h2>THE SIMS 4 MOD APK DOWNLOAD</h2>
+            <p>
+              Unlimited money, all packs unlocked, updated version, visual parody page inspired by old
+              chaotic download websites.
+            </p>
+
+            <div class="badge-row">
+              <span class="badge">Android</span>
+              <span class="badge">Simulation</span>
+              <span class="badge">Updated build</span>
+              <span class="badge">Parody layout</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-strip">
+          <div class="hero-stat">
+            <strong>154 MB</strong>
+            <span>File size</span>
+          </div>
+          <div class="hero-stat">
+            <strong>vLatest</strong>
+            <span>Version</span>
+          </div>
+          <div class="hero-stat">
+            <strong>4.8/5</strong>
+            <span>User rating</span>
+          </div>
+          <div class="hero-stat">
+            <strong>2026</strong>
+            <span>Updated</span>
+          </div>
+        </div>
+      </section>
+
+      <div class="banner">
+        <a href="https://www.ea.com/pt-br/games/the-sims">
+          <div class="big"><img src="imgs/Sims-4-Banner.avif" alt="" width="700px" ></div>
+        </a>
+      </div>
+
+      <section class="download-grid">
+        <a href="https://drive.google.com/drive/folders/1og7a-9vPxLmtixsVWchCFE2nwjorj_tN"><span class="cta green">DOWNLOAD NOW</span></a>
+        <a href="https://drive.google.com/drive/folders/1og7a-9vPxLmtixsVWchCFE2nwjorj_tN"><span class="cta blue">FAST DOWNLOAD</span></a>
+        <a href="https://drive.google.com/drive/folders/1og7a-9vPxLmtixsVWchCFE2nwjorj_tN"><span class="cta orange">FREE INSTALL</span></a>
+        <a href="https://www.ea.com/pt-br/games/the-sims"><span class="cta red">CLICK TO START</span></a>
+        <a href="https://www.bet365.bet.br/hub/pt-br/sports-betting-br?utm_source=google&utm_medium=cpc&utm_content=br_non_brand&affiliate=365_03585089&gad_source=1&gad_campaignid=22048942074&gclid=Cj0KCQjwr4jSBhCSARIsAOX1E-KkSNv8AnBUmTxkOZ3E7wa8FiWac8u94emyE54ZamK_nOnLpRTT924aAkSsEALw_wcB"><span class="cta purple">DIRECT LINK</span></a>
+        <a href="https://www.bet365.bet.br/hub/pt-br/sports-betting-br?utm_source=google&utm_medium=cpc&utm_content=br_non_brand&affiliate=365_03585089&gad_source=1&gad_campaignid=22048942074&gclid=Cj0KCQjwr4jSBhCSARIsAOX1E-KkSNv8AnBUmTxkOZ3E7wa8FiWac8u94emyE54ZamK_nOnLpRTT924aAkSsEALw_wcB"><span class="cta pink">APK UPDATED</span></a>
+      </section>
+
+      <div class="mid-grid">
+        <section class="card">
+          <h3>Download File The Sims 4 Mod APK</h3>
+          <p>
+            Baixa isso aí mano faz a boa aí mano por favor mano tamo junto camarada meu cupimxa meu chegado chefe rei lindo top demai faz o download ae meu camarada cupimxa.
+          </p>
+
+          <div class="info-card">
+            <div class="info-list">
+              <div class="info-item">
+                <strong>App name</strong>
+                <span>The Sims 4</span>
+              </div>
+              <div class="info-item">
+                <strong>Version</strong>
+                <span>Latest</span>
+              </div>
+              <div class="info-item">
+                <strong>Size</strong>
+                <span>154 MB</span>
+              </div>
+              <div class="info-item">
+                <strong>Category</strong>
+                <span>Simulation</span>
+              </div>
+              <div class="info-item">
+                <strong>Features</strong>
+                <span>Unlimited Money</span>
+              </div>
+              <div class="info-item">
+                <strong>Access</strong>
+                <span>Full Access</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="banner">
+            <a href="https://www.gov.br/pt-br/">
+              <div class="big"><img src="imgs/anúncio2.jpg" alt="" width="700px"></div>
+            </a>
+          </div>
+        </section>
+
+        <aside class="download-panel" id="download-real">
+          <h3>Preparing your download</h3>
+          <p>
+            A barra abaixo conta 15 segundos desde a entrada na página e libera o botão ao final.
+          </p>
+
+          <div class="countdown-box">
+            <div class="progress-head">
+              <span>Estamos preparando seu download</span>
+              <strong id="progressPercent">0%</strong>
+            </div>
+
+            <div class="progress-wrap">
+              <div class="progress-bar" id="progressBar"></div>
+            </div>
+
+            <div class="count-number" id="countText">Aguarde 15 segundos...</div>
+          </div>
+
+          <div class="real-download" id="realDownload">
+            <a href="#">DOWNLOAD FILE</a>
+          </div>
+
+          <div class="helper-links">
+            <a href="https://www.bet365.bet.br/hub/pt-br/sports-betting-br?utm_source=google&utm_medium=cpc&utm_content=br_non_brand&affiliate=365_03585089&gad_source=1&gad_campaignid=22048942074&gclid=Cj0KCQjwr4jSBhCSARIsAOX1E-KkSNv8AnBUmTxkOZ3E7wa8FiWac8u94emyE54ZamK_nOnLpRTT924aAkSsEALw_wcB">Mirror link 1</a>
+            <a href="https://www.bet365.bet.br/hub/pt-br/sports-betting-br?utm_source=google&utm_medium=cpc&utm_content=br_non_brand&affiliate=365_03585089&gad_source=1&gad_campaignid=22048942074&gclid=Cj0KCQjwr4jSBhCSARIsAOX1E-KkSNv8AnBUmTxkOZ3E7wa8FiWac8u94emyE54ZamK_nOnLpRTT924aAkSsEALw_wcB">Mirror link 2</a>
+            <a href="https://www.iloveimg.com/pt/download/A1tdjmg5ryvvw08t9db8qyqk2gww3bpyh8cytysdfsh23zw7gp56zq5lpt7zrk477jny0cfbc3sztq0xlkw1s6cnshb9ksgy80wzyd5hs6fh9cqsjm2nznxdpwbpr269v1zlvqlg5hhhgy4dvn470dk2ffw8wvxmk3d99gdc6w9cm42j81pq/24">Alternative server</a>
+          </div>
+        </aside>
+      </div>
+
+      <section class="comments-box">
+        <h3>User comments</h3>
+
+        <div class="comment">
+          <div class="avatar"></div>
+          <div>
+            <b>Lucas M.</b>
+            <p>Seloco seu zé cabeçudo careca doidoooo manooo top demaize baixei.</p>
+          </div>
+        </div>
+
+        <div class="comment">
+          <div class="avatar"></div>
+          <div>
+            <b>Ana P.</b>
+            <p>NUUUU ZEE THE SIMS 4 É DOIDMAIS NE.</p>
+          </div>
+        </div>
+
+        <div class="comment">
+          <div class="avatar"></div>
+          <div>
+            <b>Rafael C.</b>
+            <p>QUE SITE LIXO TA TUDO ERRADO OS POP UP SO ABRE MERDA EU NAO QUERO MCDONALDS.</p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <aside class="sidebar">
+      <div class="sponsored-card">
+        <div class="label">SPONSORED</div>
+        <a href="https://brasilescola.uol.com.br/biologia/eutrofizacao.htm">
+          <div class="thumb"><img src="imgs/anúncio4.gif" alt="" width="200px"></div>
+          <div class="copy">
+            <h4>Oferta em destaque</h4>
+            <p>Use esse espaço para criativo mais chamativo na coluna da direita.</p>
+          </div>
+        </a>
+      </div>
+
+      <div class="sponsored-card">
+        <div class="label">RECOMMENDED</div>
+        <a href="https://brasilescola.uol.com.br/biologia/eutrofizacao.htm">
+          <div class="thumb"><img src="imgs/anúncio1.jpg" alt="" width="200px"></div>
+          <div class="copy">
+            <h4>Aplicativo popular hoje</h4>
+            <p>Card estilizado para parecer anúncio de rede comum.</p>
+          </div>
+        </a>
+      </div>
+
+      <div class="sponsored-card">
+        <div class="label">HOT DEAL</div>
+        <a href="https://www.iloveimg.com/pt/download/A1tdjmg5ryvvw08t9db8qyqk2gww3bpyh8cytysdfsh23zw7gp56zq5lpt7zrk477jny0cfbc3sztq0xlkw1s6cnshb9ksgy80wzyd5hs6fh9cqsjm2nznxdpwbpr269v1zlvqlg5hhhgy4dvn470dk2ffw8wvxmk3d99gdc6w9cm42j81pq/24">
+          <div class="thumb"><img src="imgs/anúncio3.gif" alt="" width="200px"></div>
+          <div class="copy">
+            <h4>Mais um bloco patrocinado</h4>
+            <p>Preenche bem a lateral e deixa a página menos organizada de propósito.</p>
+          </div>
+        </a>
+      </div>
+    </aside>
+  </div>
+
+  <div class="toast-area" id="toastArea"></div>
+
+  <footer>
+    Parody page for visual joke purposes only.
+  </footer>
+
+  <script>
+    function closePopup(id) {
+      const el = document.getElementById(id);
+      if (el) el.style.display = "none";
+    }
+
+    function showToast(title, message, delay = 0) {
+      setTimeout(() => {
+        const toastArea = document.getElementById("toastArea");
+        const toast = document.createElement("div");
+        toast.className = "toast";
+        toast.innerHTML = "<strong>" + title + "</strong><span>" + message + "</span>";
+        toastArea.appendChild(toast);
+
+        setTimeout(() => {
+          toast.remove();
+        }, 4500);
+      }, delay);
+    }
+
+    const totalSeconds = 15;
+    let elapsed = 0;
+
+    const progressBar = document.getElementById("progressBar");
+    const progressPercent = document.getElementById("progressPercent");
+    const countText = document.getElementById("countText");
+    const realDownload = document.getElementById("realDownload");
+
+    const timer = setInterval(() => {
+      elapsed++;
+      const percent = Math.min((elapsed / totalSeconds) * 100, 100);
+
+      progressBar.style.width = percent + "%";
+      progressPercent.textContent = Math.round(percent) + "%";
+
+      const remaining = totalSeconds - elapsed;
+      if (remaining > 0) {
+        countText.textContent = "Aguarde " + remaining + " segundos...";
+      } else {
+        countText.textContent = "Download liberado.";
+        realDownload.style.display = "block";
+        clearInterval(timer);
+      }
+    }, 1000);
+
+    showToast("Download center", "Seu conteúdo está sendo preparado.", 1200);
+    showToast("Sponsored message", "Área para notificação visual de anúncio.", 4200);
+    showToast("Ready soon", "O botão principal será exibido automaticamente.", 7600);
+  </script>
+</body>
+</html>

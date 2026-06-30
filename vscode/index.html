@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Download The Sims 4 Gratis</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      background: linear-gradient(180deg, #fdfdfd, #ececec);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .box {
+      width: 90%;
+      max-width: 500px;
+      background: white;
+      border: 2px solid #ddd;
+      border-radius: 14px;
+      padding: 30px;
+      text-align: center;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+    }
+
+    h1 {
+      margin-top: 0;
+      font-size: 30px;
+      color: #222;
+    }
+
+    p {
+      color: #555;
+      margin-bottom: 24px;
+    }
+
+    .btn {
+      display: block;
+      width: 100%;
+      padding: 16px;
+      margin: 12px 0;
+      border: none;
+      border-radius: 10px;
+      font-size: 18px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: 0.2s;
+    }
+
+    .btn:hover {
+      transform: scale(1.02);
+    }
+
+    .youtube {
+      background: #ff2b2b;
+      color: white;
+    }
+
+    .locked {
+      background: #999;
+      color: white;
+      cursor: not-allowed;
+    }
+
+    .unlocked {
+      background: #19b35a;
+      color: white;
+      cursor: pointer;
+    }
+
+    .small {
+      font-size: 13px;
+      color: #888;
+      margin-top: 15px;
+    }
+  </style>
+</head>
+<body>
+  <div class="box">
+    <h1>Se inscreva no meu canal</h1>
+    <p>Clique no botão abaixo para liberar o acesso ao site principal.</p>
+
+    <button class="btn youtube" id="ytBtn">Ir para o canal</button>
+    <button class="btn locked" id="enterBtn" disabled>Entrar no site principal</button>
+
+    <div class="small">Acesso liberado somente após clicar no botão acima.</div>
+  </div>
+
+  <script>
+    const ytBtn = document.getElementById("ytBtn");
+    const enterBtn = document.getElementById("enterBtn");
+
+    ytBtn.addEventListener("click", function () {
+      window.open("https://www.youtube.com/watch?v=dQw4w9WgXcQ");
+
+      enterBtn.disabled = false;
+      enterBtn.classList.remove("locked");
+      enterBtn.classList.add("unlocked");
+    });
+
+    enterBtn.addEventListener("click", function () {
+      if (!enterBtn.disabled) {
+        window.location.href = "projeto.html";
+      }
+    });
+  </script>
+</body>
+</html>
